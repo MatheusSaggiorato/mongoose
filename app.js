@@ -13,7 +13,7 @@ db.on('error', () => { console.log("houve um erro"); });
 db.once('open', () => { console.log("Banco carregado") });
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'templates'));
+app.set('views', path.join(__dirname, './templates'));
 
 app.use('/', linkRoute);
 
